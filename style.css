@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b1120;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #16213e;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 2px solid #00ff88;
+}
+
+nav a {
+  color: #00ff88;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.ticker {
+  overflow: hidden;
+  background: #1a1a2e;
+  padding: 10px 0;
+  border-top: 2px solid #00ff88;
+  border-bottom: 2px solid #00ff88;
+}
+
+.ticker-wrap {
+  display: flex;
+  white-space: nowrap;
+}
+
+.ticker-move {
+  display: inline-block;
+  animation: move 15s linear infinite;
+}
+
+@keyframes move {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+.intro {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #00ff88;
+  color: #0b1120;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00cc6a;
+}
+
+.stock-card {
+  background: #1a1a2e;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ff88;
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  background: #16213e;
+  text-align: center;
+  padding: 1em;
+  border-top: 2px solid #00ff88;
+}
